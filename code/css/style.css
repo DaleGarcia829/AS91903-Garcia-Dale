@@ -1,11 +1,5 @@
 #intro {
-    background: url(../images/background.png)
-    no-repeat center;
-    background-size: auto;
-    padding-bottom: 100px;
-    padding-top: 250px;
-    padding-right: 250px;
-    padding-left: 250px;
+    min-height: 100vh;
  
     
 }
@@ -15,13 +9,25 @@
     font-size: 60px;
     font-family: "Archivo Black", sans-serif;
     opacity: 0.8;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px;
     text-align: center;
    
 }
 
-p {font-size: 50px;
+p {font-size: 174px;
+    color: #c6c753;
+    padding-left: 50px;
+}
+
+html,body {
+    background: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+ 
+    
 }
