@@ -1,15 +1,11 @@
-#intro {
-    min-height: 100vh;
- 
-    
-}
+
 
 .bottomnavdivision {
-    background-color:#00ced1;
-    font-size: 60px;
+    background-color:#ffffff;
+    font-size: 20px;
     font-family: "Archivo Black", sans-serif;
-    opacity: 0.8;
-    padding: 100px;
+    opacity: 1;
+    padding: 200px;
     text-align: center;
    
 }
@@ -30,4 +26,10 @@ html,body {
     min-height: 100vh;
  
     
+}
+
+#room1{float: left;}
+
+.hidden-gallery {
+    display: none;
 }
