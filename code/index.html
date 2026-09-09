@@ -4,21 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://jquery.com"></script>
-    <link rel="stylesheet" href="https://jsdelivr.net"/>
-    <script src="https://jsdelivr.net"></script>
+    <script src="https://jquery.com" defer></script>
     <title>Hotel Shaggy</title>
 </head>
 <body>
     <main>
-            <p>Hotel <br>Shaggy</p>
-        <div class="bottomnavdivision">
-            <h1>WELCOME TO</h1>
-            <a data-fancybox="gallery"  href="images/room1.jpg" id="room1">  <img src="images/room1_thumb.jpg" ></a>
-                <div class="hidden-gallery">
-                    <a data-fancybox="gallery"  href="images/room2.jpg" id="room1">  <img src="images/room2.jpg" ></a>
+        <p>Hotel <br>Shaggy</p>
+    <div class="bottomnavdivision">
+        <p id="p2">WELCOME TO HOTEL SHAGGY!</p>
+            
+                <div id="room1">
+                    <a href="#gallery-window">
+                        <img src="images/room1_thumb.jpg" alt="Room 1">
+                    </a>
                 </div>
+                
+            <p id="p3">This website is a hotel booking website dedicated to Hotel Shaggy that is for tourists who are looking 
+                for a hotel accommodation in Auckland so that they will be encourage to visit the city. 
+                The website will include basic information about the hotel to guide the tourists who are interested in staying in Auckland 
+                and will allow them to reserve an accommodation with our hotel.<br>
+                We hope you will enjoy your stay with us!
+            </p>
+    </div>
+
+    <div class="bottomnavdivision2">
+            <p id="p2">ROOMS</p>
+                
+                    <div id="room1">
+                        <a href="#gallery-window">
+                            <img src="images/room1_thumb.jpg" alt="Room 1">
+                        </a>
+                    </div>
+                    
+                <p id="p3">.<br>
+                    
+                </p>
+                
         </div>
+
+    <div id="gallery-window" class="lightbox-overlay">
+                    <div class="lightbox-box">
+            <a href="#" class="close-button">Close</a>
+            <div class="gallery-scroll">
+                <img src="images/room1.jpg" alt="Pic 1">
+                <img src="images/room2.jpg" alt="Pic 2">
+            </div>
+
+    </div>
+
+    <div id="gallery-window2" class="lightbox-overlay">
+                    <div class="lightbox-box">
+            <a href="#" class="close-button">Close</a>
+            <div class="gallery-scroll">
+                <img src="images/outside1.jpg" alt="Pic 1">
+                <img src="images/outside2.jpg" alt="Pic 2">
+            </div>
+
+    </div>
+
+
+    
+
 
 
       
