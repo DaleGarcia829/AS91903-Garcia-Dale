@@ -7,13 +7,28 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    
 }
 
 p {
     font-size: 100px;
     color: #c6c753;
-    padding-left: 50px;
+    padding-left: 30px;
 }
+
+#p2{color: black;
+font-size: 50px;
+margin-bottom: 150px;
+text-align: center;}
+
+#p3{color:black;
+font-size: 35px}
+
+#p4{font-size: 23px;
+    text-align: center;
+    padding-bottom:5px ;
+    padding-top: 20px;
+    color:white;}
 
 #room1 {
     float: left;
@@ -89,6 +104,14 @@ p {
     max-width: 80%;
 }
 
+.lightbox-box3 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 80%;
+}
+
 .close-button {
     display: block;
     color: #000;
@@ -112,7 +135,12 @@ p {
     height:400px;
 }
 
-
+#gallery-scroll3 {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    height:400px;
+}
 
 .gallery-scroll1 img {
     height: 400px;
@@ -126,31 +154,87 @@ p {
     border-radius: 4px;
 }
 
+.gallery-scroll3 img {
+    height: 400px;
+    width: auto;
+    border-radius: 4px;
+}
+
 #bottomnavdivision {
     background-color:#ffffff;
     font-size: 20px;
     font-family: "Archivo Black", sans-serif;
     opacity: 1;
-    padding: 200px;
+    padding: 100px;
     
    
 }
-
-#p2{color: black;
-font-size: 50px;
-margin-bottom: 50px;
-text-align: center;}
-
-#p3{color:black;
-font-size: 40px}
 
 #bottomnavdivision2 {
     background-color:#ffffff;
     font-size: 20px;
     font-family: "Archivo Black", sans-serif;
     opacity: 1;
-    padding: 200px;
+    padding: 100px;
     margin-top: 100px;
     
    
+}
+
+#bottomnavdivision3 {
+    background-color:#ffffff;
+    font-size: 20px;
+    font-family: "Archivo Black", sans-serif;
+    opacity: 1;
+    padding: 100px;
+    margin-top: 100px;
+    
+   
+}
+
+
+
+
+
+#logo {width: 10%;
+    padding-top: 10px;
+    padding-left: 10px;
+ }
+
+.topnav {
+    float:right;
+    font-family: Arial;
+    font-size: 20px;
+    padding-top: 80px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    background-color:darkgreen;
+    border-color:gold;
+    border-radius: 20px;
+    border-style: inset;
+    color: white;
+    margin-right: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+      
+}
+
+#footr {
+    color: aliceblue;
+    text-align: center;
+    padding-bottom:5px ;
+    padding-top: 20px;
+    
 }
