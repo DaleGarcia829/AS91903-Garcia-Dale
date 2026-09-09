@@ -26,8 +26,20 @@ p {
 
 }
 
+#rooms {
+    float: left;
+}
 
-.lightbox-overlay {
+#rooms img {
+    width: 400px;
+    height: 350px;
+    margin-right: 70px;
+}
+
+
+
+
+.lightbox-overlay1 {
     display: none;
     position: fixed;
     top: 0;
@@ -38,13 +50,38 @@ p {
     z-index: 9999;
 }
 
-.lightbox-overlay:target {
+.lightbox-overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+.lightbox-overlay1:target {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.lightbox-box {
+.lightbox-overlay2:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-box1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 80%;
+}
+
+.lightbox-box2 {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -61,20 +98,35 @@ p {
     font-family: sans-serif;
 }
 
-.gallery-scroll {
+#gallery-scroll1 {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    max-height: 70vh;
+    height:400px;
 }
 
-.gallery-scroll img {
+#gallery-scroll2 {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    height:400px;
+}
+
+
+
+.gallery-scroll1 img {
     height: 400px;
     width: auto;
     border-radius: 4px;
 }
 
-.bottomnavdivision {
+.gallery-scroll2 img {
+    height: 400px;
+    width: auto;
+    border-radius: 4px;
+}
+
+#bottomnavdivision {
     background-color:#ffffff;
     font-size: 20px;
     font-family: "Archivo Black", sans-serif;
@@ -92,7 +144,7 @@ text-align: center;}
 #p3{color:black;
 font-size: 40px}
 
-.bottomnavdivision2 {
+#bottomnavdivision2 {
     background-color:#ffffff;
     font-size: 20px;
     font-family: "Archivo Black", sans-serif;
