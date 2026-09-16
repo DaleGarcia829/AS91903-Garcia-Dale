@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic page setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS style sheet link -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JavaScript file link -->
     <script src="https://jquery.com" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts links -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    
+    <!-- Title on the browser tab -->
     <title>Hotel Shaggy</title>
 </head>
 <body>
+    <!-- Top bar with logo and menu -->
     <header>
+            <!-- Website Logo -->
             <a href="index.html"><img id="logo" src="images/logo.png" alt="Hotel Logo"/></a>
             <div class="topnav">
-            <!-- The nav bar of home page-->
+            <!-- Navigation links -->
             <nav>
                 <ul>
-                    <li><a href="index.html">ROOMS</a></li>
+                    <li><a href="rooms.html">ROOMS</a></li>
                     <li><a href="booking.html">BOOKING</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
             </div>
+    <!-- Main content starts here -->
     <main>
+        <!-- Big main title text -->
         <p id="p1">Hotel <br>Shaggy</p>
+    
+    <!-- Part 1: Welcome message and first image gallery -->
     <section id="bottomnavdivision">
         <p id="p2">WELCOME TO HOTEL SHAGGY!</p>
             
+                <!-- Room image thumbnail link -->
                 <div id="room1">
                     <a href="#gallery-window1">
                         <img src="images/room1_thumb.jpg" alt="Room 1">
                     </a>
                 </div>
                 
+            <!-- About text paragraph -->
             <p id="p3">This website is a hotel booking website dedicated to Hotel Shaggy that is for tourists who are looking 
                 for a hotel accommodation in Auckland so that they will be encourage to visit the city. 
                 The website will include basic information about the hotel to guide the tourists who are interested in staying in Auckland 
@@ -44,58 +61,74 @@
                 We hope you will enjoy your stay with us!
             </p>
             
+                <!-- First hidden pop-up window gallery -->
                 <div id="gallery-window1" class="lightbox-overlay1">
                     <div class="lightbox-box1">
+            <!-- Close button for pop-up -->
             <a href="#" class="close-button">Close</a>
+            <!-- Images inside pop-up -->
             <div id="gallery-scroll1">
                 <img src="images/outside1.jpg" alt="Pic 1">
                 <img src="images/outside2.jpg" alt="Pic 2">
             </div>
 
-    </div>
     </section>
 
+    <!-- Part 2: Facilities message and second image gallery -->
     <section id="bottomnavdivision2">
             <p id="p2">FACILITIES</p>
                 
+                    <!-- Facility image thumbnail link -->
                     <div id="rooms">
                         <a href="#gallery-window2">
-                            <img src="images/room2.jpg" alt="Room">
+                            <img src="images/facility1.jpg" alt="Room">
                         </a>
                     </div>
                     
+                <!-- Facilities text paragraph -->
                 <p id="p3">Indulge in pure sophistication in our elegantly designed rooms and suites, where modern luxury meets timeless comfort. 
                     Every sanctuary features plush king-size beds with premium linens, stunning views, and spa-inspired marble bathrooms. 
                     Enhanced by intuitive smart-room technology and personalized service, every detail is tailored to your absolute relaxation. 
                     Your unforgettable luxury retreat awaits!
                 </p>
+                <!-- Second hidden pop-up window gallery -->
                 <div id="gallery-window2" class="lightbox-overlay2">
                     <div class="lightbox-box2">
+            <!-- Close button for pop-up -->
             <a href="#" class="close-button">Close</a>
+            <!-- Images inside pop-up -->
             <div id="gallery-scroll2">
-                <img src="images/room1.jpg" alt="Pic 1">
-                <img src="images/room2.jpg" alt="Pic 2">
+                <img src="images/facility2.jpg" alt="Pic 1">
+                <img src="images/facility3.jpg" alt="Pic 2">
+                <img src="images/facility4.jpg" alt="Pic 3">
+                <img src="images/facility5.jpg" alt="Pic 4">
             </div>
 
     </section>
 
+    <!-- Part 3: History message and third image gallery -->
     <section id="bottomnavdivision3">
             <p id="p2">OUR HISTORY</p>
                 
+                    <!-- History image thumbnail link -->
                     <div id="rooms">
                         <a href="#gallery-window3">
                             <img src="images/old hotel 1.jpg" alt="Room">
                         </a>
                     </div>
                     
+                <!-- History text paragraph -->
                 <p id="p3">Established in 1908, our historic property has evolved from a charming grand estate into a symbol of modern luxury. 
                     For over a century, we have preserved our rich heritage and architectural elegance while expanding into a world-class luxury destination. 
                     Today, timeless character seamlessly blends with sophisticated, contemporary design across our grand spaces. 
                     We continue our legacy of exceptional hospitality, offering a majestic retreat that honors the past while embracing the future.
                 </p>
+                <!-- Third hidden pop-up window gallery -->
                 <div id="gallery-window3" class="lightbox-overlay2">
                     <div class="lightbox-box3">
+            <!-- Close button for pop-up -->
             <a href="#" class="close-button">Close</a>
+            <!-- Images inside pop-up -->
             <div id="gallery-scroll2">
                 <img src="images/old hotel 2.jpg" alt="Pic 1">
                 <img src="images/old hotel 3.jpg" alt="Pic 2">
@@ -103,15 +136,20 @@
 
     </section>
 
+    <!-- Footer with social media links and icons -->
     <footer>
             <section id="footr">
+            <!-- Copyright text -->
             <p id="p4">©2026 <b>GARCIA HOTELS GROUP Ltd. </b> All rights reserved. </p>
-            <a href="https://web.telegram.org/"><img id="icon" src="images/email_icon.png" alt="The Telegram logo"/></a>
-            <a href="https://www.facebook.com/"><img id="icon" src="images/facebook_icon.png" alt="The Facebook logo"/></a>
-            <a href="https://instagram.com/"><img id="icon" src="images/instagram_icon.png" alt="The Instagram logo"/></a>
+            <!-- Social media icon buttons -->
+            <a href="https://telegram.org"><img id="icon" src="images/email_icon.png" alt="The Telegram logo"/></a>
+            <a href="https://facebook.com"><img id="icon" src="images/facebook_icon.png" alt="The Facebook logo"/></a>
+            <a href="https://instagram.com"><img id="icon" src="images/instagram_icon.png" alt="The Instagram logo"/></a>
             
         </footer>
 
     </main>
 </body>
 </html>
+
+
