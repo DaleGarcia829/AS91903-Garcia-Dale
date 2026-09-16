@@ -11,37 +11,56 @@
     <!-- JavaScript file link -->
     <script src="https://jquery.com" defer></script>
     
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+    </script>
+
     <!-- Google Fonts links -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
     
     <!-- Title on the browser tab -->
-    <title>Hotel Shaggy - Booking</title>
+    <title>Booking</title>
 </head>
 <body>
-    <!-- Top bar with logo and menu -->
+    <!-- Top bar with menu -->
     <header>
             <!-- Website Logo -->
             <a href="index.html"><img id="logo" src="images/logo.png" alt="Hotel Logo"/></a>
-            <div class="topnav">
-            <!-- Navigation links -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="rooms.html">ROOMS</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
-            </nav>
-            </div>
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                <a href="#home" class="active"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="booking.html">Booking</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </div>
+    </header>
     <!-- Main content starts here -->
     <main>
         <!-- Big main title text -->
         <p id="p1">Book Your <br>Stay</p>
     
-    <!-- Main white section for the form -->
+    <!-- Part 1: Standard Rooms text and first image gallery -->
     <section id="bottomnavdivision">
         <p id="p2">RESERVATION FORM</p>
             
@@ -50,11 +69,11 @@
             Our team will process your request and send a confirmation email shortly!
         </p>
 
-        <!-- Container to center your Google Form on the page -->
+        <!-- Container to center Google Form on the page -->
         <div style="display: flex; justify-content: center; width: 100%;">
             
-            <!-- Your live Google Form embedded right into the layout -->
-            <iframe src="https://google.com" width="700" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- Live Google Form embedded right into the layout -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2ToknsS0AAiw9iQ_0lirO6x-glIouWmLMWdgvA0GNPlsTsA/viewform?usp=sharing&ouid=117354844123722708096" width="700" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
         </div>
     
@@ -75,5 +94,3 @@
     </main>
 </body>
 </html>
-
-

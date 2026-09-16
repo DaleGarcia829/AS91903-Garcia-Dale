@@ -1,3 +1,4 @@
+/* Base style for the entire page */
 html, body {
     background: url(../images/background.png);
     background-size: cover;
@@ -7,9 +8,9 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    
 }
 
+/* Big main hotel title text */
 #p1 {
     font-size: 100px;
     color: #c6c753;
@@ -17,45 +18,55 @@ html, body {
     padding-left: 30px;
 }
 
-#p2{color: black;
-font-size: 60px;
-margin-bottom: 150px;
-text-align: center;
-font-family: "New Amsterdam", sans-serif;
-}
-
-#p3{color:black;
-font-size: 35px
-}
-
-#p4{font-size: 20px;
+/* Section headings like WELCOME and FACILITIES */
+#p2 {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
     text-align: center;
-    padding-bottom:5px ;
-    padding-top: 20px;
-    color:white;
+    font-family: "New Amsterdam", sans-serif;
 }
 
+/* Description text inside sections */
+#p3 {
+    color: black;
+    font-size: 35px;
+}
+
+/* Base footer text style */
+#p4 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    color: white;
+}
+
+/* Room 1 layout */
 #room1 {
     float: left;
 }
 
+/* Room 1 thumbnail picture sizing */
 #room1 img {
     width: 400px;
     height: 350px;
     margin-right: 70px;
-
 }
 
+/* Other rooms layout */
 #rooms {
     float: left;
 }
 
+/* Other rooms thumbnail pictures sizing */
 #rooms img {
     width: 400px;
     height: 350px;
     margin-right: 70px;
 }
 
+/* Dark background overlay for pop-up 1 */
 .lightbox-overlay1 {
     display: none;
     position: fixed;
@@ -67,6 +78,7 @@ font-size: 35px
     z-index: 9999;
 }
 
+/* Dark background overlay for pop-up 2 */
 .lightbox-overlay2 {
     display: none;
     position: fixed;
@@ -78,18 +90,21 @@ font-size: 35px
     z-index: 9999;
 }
 
+/* Show pop-up 1 when clicked */
 .lightbox-overlay1:target {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Show pop-up 2 when clicked */
 .lightbox-overlay2:target {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* White box container for pop-up gallery 1 */
 .lightbox-box1 {
     background: #fff;
     padding: 20px;
@@ -98,6 +113,7 @@ font-size: 35px
     max-width: 80%;
 }
 
+/* White box container for pop-up gallery 2 */
 .lightbox-box2 {
     background: #fff;
     padding: 20px;
@@ -106,6 +122,7 @@ font-size: 35px
     max-width: 80%;
 }
 
+/* White box container for pop-up gallery 3 */
 .lightbox-box3 {
     background: #fff;
     padding: 20px;
@@ -114,6 +131,7 @@ font-size: 35px
     max-width: 80%;
 }
 
+/* Close link inside the pop-ups */
 .close-button {
     display: block;
     color: #000;
@@ -123,117 +141,162 @@ font-size: 35px
     font-family: sans-serif;
 }
 
+/* Horizontal scroll area for gallery 1 */
 #gallery-scroll1 {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    height:400px;
+    height: 400px;
 }
 
+/* Horizontal scroll area for gallery 2 */
 #gallery-scroll2 {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    height:400px;
+    height: 400px;
 }
 
+/* Horizontal scroll area for gallery 3 */
 #gallery-scroll3 {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    height:400px;
+    height: 400px;
 }
 
+/* Sizing for images inside gallery 1 */
 .gallery-scroll1 img {
     height: 400px;
     width: auto;
     border-radius: 4px;
 }
 
+/* Sizing for images inside gallery 2 */
 .gallery-scroll2 img {
     height: 400px;
     width: auto;
     border-radius: 4px;
 }
 
+/* Sizing for images inside gallery 3 */
 .gallery-scroll3 img {
     height: 400px;
     width: auto;
     border-radius: 4px;
 }
 
+/* White background section 1 */
 #bottomnavdivision {
-    background-color:#ffffff;
+    background-color: #ffffff;
     font-size: 20px;
     opacity: 1;
     padding: 100px;
     font-family: "Oswald", sans-serif;
-    
-   
 }
 
+/* White background section 2 */
 #bottomnavdivision2 {
-    background-color:#ffffff;
+    background-color: #ffffff;
     font-size: 20px;
     opacity: 1;
     padding: 100px;
     margin-top: 100px;
     font-family: "Oswald", sans-serif;
-    
-   
 }
 
+/* White background section 3 */
 #bottomnavdivision3 {
-    background-color:#ffffff;
+    background-color: #ffffff;
     font-size: 20px;
     opacity: 1;
     padding: 100px;
     margin-top: 100px;
     font-family: "Oswald", sans-serif;
-   
 }
 
-#logo {width: 10%;
+/* Top logo image styling */
+#logo {
+    width: 10%;
     padding-top: 10px;
     padding-left: 10px;
- }
-
-.topnav {
-    float:right;
-    font-family: Arial;
-    font-size: 20px;
-    padding-top: 80px;
-    
 }
 
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-bottom:20px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Removes bullet points from menu list */
 nav ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
 }
 
+/* Makes menu links sit side-by-side */
 nav li {
     display: inline-block;
 }
 
+/* Green menu button boxes styling */
 nav li a {
-    background-color:darkgreen;
-    border-color:gold;
+    background-color: darkgreen;
+    border-color: gold;
     border-radius: 20px;
     border-style: inset;
     color: white;
     margin-right: 20px;
     padding: 14px 16px;
     text-decoration: none;
-      
 }
 
+/* Footer layout and social icon font section */
 #footr {
     color: aliceblue;
     text-align: center;
-    padding-bottom:5px ;
+    padding-bottom: 5px;
     padding-top: 20px;
     font-family: "Archivo Black", sans-serif;
-    
-    
 }
+
+

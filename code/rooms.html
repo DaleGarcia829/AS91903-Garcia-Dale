@@ -11,6 +11,17 @@
     <!-- JavaScript file link -->
     <script src="https://jquery.com" defer></script>
     
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+    </script>
+
     <!-- Google Fonts links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,20 +33,28 @@
     <title>Hotel Shaggy</title>
 </head>
 <body>
-    <!-- Top bar with logo and menu -->
+    <!-- Top bar with menu -->
     <header>
             <!-- Website Logo -->
             <a href="index.html"><img id="logo" src="images/logo.png" alt="Hotel Logo"/></a>
-            <div class="topnav">
-            <!-- Navigation links -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="booking.html">BOOKING</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
-            </nav>
-            </div>
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                <a href="#home" class="active"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="booking.html">Booking</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </div>
+    </header>
     <!-- Main content starts here -->
     <main>
         <!-- Big main title text -->
