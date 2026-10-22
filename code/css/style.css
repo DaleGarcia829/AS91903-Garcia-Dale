@@ -19,7 +19,31 @@ html, body {
 }
 
 /* Section headings like WELCOME and FACILITIES */
-#p2 {
+#welcome {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#welcome {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#fac {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#his {
     color: black;
     font-size: 60px;
     margin-bottom: 150px;
@@ -28,7 +52,17 @@ html, body {
 }
 
 /* Description text inside sections */
-#p3 {
+#intro {
+    color: black;
+    font-size: 35px;
+}
+
+#gym {
+    color: black;
+    font-size: 35px;
+}
+
+#est {
     color: black;
     font-size: 35px;
 }
@@ -55,12 +89,21 @@ html, body {
 }
 
 /* Other rooms layout */
-#rooms {
+#history {
+    float: left;
+}
+#facility {
     float: left;
 }
 
 /* Other rooms thumbnail pictures sizing */
-#rooms img {
+#history img {
+    width: 400px;
+    height: 350px;
+    margin-right: 70px;
+}
+
+#facility img {
     width: 400px;
     height: 350px;
     margin-right: 70px;
@@ -157,6 +200,13 @@ html, body {
     height: 400px;
 }
 
+#gallery-scroll2b {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    height: 400px;
+}
+
 /* Horizontal scroll area for gallery 3 */
 #gallery-scroll3 {
     display: flex;
@@ -245,7 +295,25 @@ html, body {
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+.topnav a.icon1 {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-bottom:20px;
+}
+
+.topnav a.icon2 {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-bottom:20px;
+}
+
+.topnav a.icon3 {
   background: black;
   display: block;
   position: absolute;
