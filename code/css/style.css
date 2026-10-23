@@ -27,14 +27,6 @@ html, body {
     font-family: "New Amsterdam", sans-serif;
 }
 
-#welcome {
-    color: black;
-    font-size: 60px;
-    margin-bottom: 150px;
-    text-align: center;
-    font-family: "New Amsterdam", sans-serif;
-}
-
 #fac {
     color: black;
     font-size: 60px;
@@ -44,6 +36,38 @@ html, body {
 }
 
 #his {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#stan {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#prem {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#sui {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+#res {
     color: black;
     font-size: 60px;
     margin-bottom: 150px;
@@ -67,6 +91,21 @@ html, body {
     font-size: 35px;
 }
 
+#p3 {
+    color: black;
+    font-size: 35px;
+}
+
+#p3b {
+    color: black;
+    font-size: 35px;
+}
+
+#p3c {
+    color: black;
+    font-size: 35px;
+}
+
 /* Base footer text style */
 #p4 {
     font-size: 20px;
@@ -81,8 +120,28 @@ html, body {
     float: left;
 }
 
+#room1b {
+    float: left;
+}
+
+#room2 {
+    float: left;
+}
+
 /* Room 1 thumbnail picture sizing */
 #room1 img {
+    width: 400px;
+    height: 350px;
+    margin-right: 70px;
+}
+
+#room1b img {
+    width: 400px;
+    height: 350px;
+    margin-right: 70px;
+}
+
+#room2 img {
     width: 400px;
     height: 350px;
     margin-right: 70px;
